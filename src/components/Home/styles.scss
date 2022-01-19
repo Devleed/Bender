@@ -1,0 +1,39 @@
+.container {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #6d003ae7, #240013),
+    url(../../assets/earth-bg.jpg);
+  background-position: top;
+  background-size: contain;
+  color: white;
+
+  & .navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    align-items: flex-start;
+    color: white;
+  }
+
+  & .logo-heading {
+    margin-right: auto;
+    /* font-family: 'Suez One', serif; */
+    font-size: 50px;
+    margin-top: 0;
+  }
+}
+
+.primary-btn {
+  padding: 10px;
+  background-color: white;
+  border-radius: 2px;
+  border: none;
+  color: #be0072;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  font-size: 13px;
+
+  &:hover {
+    transform: scale(0.97);
+  }
+}

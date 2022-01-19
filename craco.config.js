@@ -14,6 +14,7 @@ module.exports = {
       '@api': path.resolve(__dirname, 'src/api'),
       '@assets': path.resolve(__dirname, 'src/assets'),
       '@contracts': path.resolve(__dirname, 'src/contracts'),
+      '@tests': path.resolve(__dirname, 'src/tests'),
     },
   },
   jest: {
@@ -27,5 +28,5 @@ module.exports = {
   eslint: {
     mode: ESLINT_MODES.file,
   },
-  babel: { plugins: ['transform-remove-console'] },
+  // babel: { plugins: ['transform-remove-console'] },
 }

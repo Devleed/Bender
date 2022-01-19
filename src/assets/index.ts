@@ -1,5 +1,9 @@
-import NFTImage from './NFTimage.jpg'
+import earthBg from './earth-bg.jpg'
+import logoJpg from './logo.jpg'
+import logoPng from './logo.png'
 
 export default {
-  NFTImage,
+  earthBg,
+  logoJpg,
+  logoPng,
 }

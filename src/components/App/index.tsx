@@ -1,20 +1,21 @@
-import Counter from '@components/Counter'
-import JestDemo from '@components/JestDemo'
-import Stake from '@components/Stake'
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+
+import Router from '@components/Router'
+
 import './styles.scss'
+import { setEthersProvider } from '@redux/slices/ethersSlice/ethers.actions'
 
 type Props = Record<string, unknown>
 
 const App: FC<Props> = () => {
-  return (
-    <div className="app_container">
-      <h4>Counter App</h4>
-      <Counter />
-      <Stake />
-      <JestDemo id="2" />
-    </div>
-  )
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(setEthersProvider())
+  }, [])
+
+  return <Router />
 }
 
 export default App
